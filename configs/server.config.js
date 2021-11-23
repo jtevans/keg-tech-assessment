@@ -1,14 +1,15 @@
 const { uuid } = require('@keg-hub/jsutils')
 
+// Changed the web port to 5004 because of conflict with existing service on port 3000 on my laptop and my server.
 module.exports = {
   api: {
-    origins: [],
+    origins: ['http://localhost:5004', 'https://www.kilnar.com:5004'],
     port: 5005,
     host: '0.0.0.0',
     uuid: uuid(),
   },
   web: {
-    port: 3000,
+    port: 5004,
     host: '0.0.0.0',
   },
 }
