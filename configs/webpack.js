@@ -22,6 +22,11 @@ module.exports = {
     compress: true,
     host: config.web.host,
     port: config.web.port,
+    public: "www.kilnar.com",
+    disableHostCheck: true,
+    allowedHosts: [
+      ".kilnar.com"
+    ],
     overlay: true
   },
   module: {

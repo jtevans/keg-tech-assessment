@@ -3,7 +3,7 @@ var expect = require("chai").expect;
 var request = require("request");
 
 describe('Connecting to API', function () {
-  var url = 'http://localhost:5005/goats'
+  var url = 'http://www.kilnar.com:5005/goats'
 
   it("API Status Is 200", function (done) {
     request(url, function (error, response, body) {
